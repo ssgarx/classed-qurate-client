@@ -108,7 +108,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://young-reaches-51472.herokuapp.com/",
+  "proxy": "https://mysterious-anchorage-33929.herokuapp.com/",
   "jest": {
     "roots": [
       "<rootDir>/src"
