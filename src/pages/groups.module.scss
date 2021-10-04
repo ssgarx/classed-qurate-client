@@ -1,0 +1,105 @@
+.home_gp {
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s all;
+  .home_gp_name {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  .home_gp_username {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+}
+.home_gp:hover {
+  background-color: #fcf3f3;
+}
+.home_gp:active {
+  background-color: #f3e2e2;
+}
+
+.icon_home {
+  width: 40px;
+  margin-top: 6px;
+}
+.home_name {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.home_username {
+  font-size: 15px;
+}
+
+.scrollbox {
+  margin: 3px;
+  height: 100%;
+
+  overflow: auto;
+  visibility: hidden;
+}
+
+.scrollbox_content,
+.scrollbox:hover,
+.scrollbox:focus {
+  visibility: visible;
+  margin-bottom: 130px;
+}
+
+.hm_create_div {
+  padding: 10px;
+  .hm_create_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    transition: 0.3s all;
+
+    -webkit-box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+  }
+  .hm_create_btn:hover {
+    color: #ff4b33;
+    border-radius: 0%;
+  }
+  .hm_create_btn:active {
+    background: #000000;
+  }
+}
+.close_button {
+  border: 2px solid #000000;
+  background: #fcf3f3;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+.close_button:hover {
+  opacity: 0.8;
+}
+.close_button:active {
+  opacity: 1;
+}
+.menu_icon {
+  border: none;
+  background-color: transparent;
+  border-radius: 53px;
+  height: 25px;
+  width: 25px;
+  transition: 0.3s ease all;
+}
+.menu_icon:hover {
+  background-color: #fcf3f3;
+}
+.menu_icon:active {
+  background-color: #f3e2e2;
+}

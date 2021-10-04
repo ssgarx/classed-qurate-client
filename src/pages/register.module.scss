@@ -1,0 +1,94 @@
+.leftSide {
+  text-align: left;
+  margin-left: 100px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 9vw;
+  margin-right: 30px;
+  & > p:nth-child(3) {
+    color: #ff4b33;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+.rightSide {
+  text-align: left;
+  margin-top: 10px;
+  .icon {
+    width: 40px;
+    position: relative;
+    left: -10px;
+  }
+  .ip_plus_error {
+    margin-bottom: 10px;
+    .email_input {
+      border: 1px solid black;
+      width: 275px;
+      font-size: 20px;
+      line-height: 10px;
+      padding: 5px;
+    }
+    .email_input:focus {
+      outline: none !important;
+    }
+    .error_msgs {
+      font-size: 15px;
+      color: #d76464;
+    }
+  }
+  .reg_button {
+    border: 2px solid #ffe2e2;
+    background: #fcf3f3;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    span {
+      background: transparent;
+      & i {
+        background: transparent;
+        position: relative;
+        top: 1px;
+        -webkit-animation: spin 1s linear infinite; /* Safari */
+        animation: spin 1s linear infinite;
+      }
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  .reg_button:hover {
+    opacity: 0.8;
+  }
+  .reg_button:active {
+    opacity: 1;
+  }
+}
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 1000px) {
+  .leftSide {
+    font-size: 4vw;
+  }
+  .rightSide {
+    margin-top: 50px;
+  }
+}

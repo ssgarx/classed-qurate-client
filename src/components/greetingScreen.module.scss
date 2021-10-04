@@ -1,0 +1,107 @@
+@mixin font_style1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+@mixin positon_style1 {
+  display: flex;
+  position: absolute;
+}
+
+.settings_informer_parent {
+  @include font_style1();
+  @include positon_style1();
+
+  top: 95px;
+  left: 6px;
+  //access first child
+  & > *:first-child {
+    top: -77px;
+    position: relative;
+  }
+}
+.exp_search_informer_parent {
+  @include font_style1();
+  @include positon_style1();
+  text-align: left;
+  top: 10px;
+  right: -10px;
+  flex-direction: row-reverse;
+  //target 2nd child
+  & > *:nth-child(2) {
+    top: 10px;
+    right: -65px;
+    position: relative;
+  }
+}
+.your_folders_informer_parent {
+  @include font_style1();
+  @include positon_style1();
+  left: -20px;
+  top: 140px;
+  & > *:nth-child(1) {
+    position: relative;
+    /* top: 4px; */
+    left: 25px;
+  }
+  & > *:nth-child(2) {
+    position: relative;
+    top: 80px;
+    left: -45px;
+  }
+  //target second p tag from second child
+  & > *:nth-child(2) > p:nth-child(2) {
+    font-size: 15px;
+    color: gray;
+  }
+}
+.exp_publicfolder_informer_parent {
+  @include font_style1();
+  @include positon_style1();
+  text-align: left;
+  top: 275px;
+  right: -10px;
+  flex-direction: row-reverse;
+  //target 2nd child
+  & > *:nth-child(1) {
+    position: absolute;
+    top: -56px;
+    right: 10px;
+  }
+  & > *:nth-child(2) {
+    top: 10px;
+    right: 20px;
+    position: relative;
+  }
+}
+.follow_informer_parent {
+  @include font_style1();
+  @include positon_style1();
+  top: 385px;
+  .img2 {
+    position: relative;
+    top: -60px;
+    right: -43px;
+  }
+  .img3 {
+    position: relative;
+    top: -76px;
+    left: 10px;
+  }
+  .img4 {
+    position: relative;
+    top: -122px;
+    width: 95px;
+    right: -20px;
+  }
+  .img5 {
+    position: relative;
+    top: -170px;
+    left: 0px;
+  }
+  //target 2nd div
+  & > *:nth-child(2) {
+    position: relative;
+    top: 20px;
+    left: -5;
+  }
+}

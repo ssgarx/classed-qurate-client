@@ -1,0 +1,40 @@
+.otf {
+  .icon {
+    width: 40px;
+    position: relative;
+    left: -10px;
+  }
+  .otf_label {
+    font-weight: 500;
+    margin-bottom: 7px;
+    display: inline-block;
+  }
+  .email_input {
+    border: 1px solid black;
+    width: 275px;
+    font-size: 20px;
+    line-height: 10px;
+    padding: 5px;
+  }
+  .email_input:focus {
+    outline: none !important;
+  }
+  .error_msgs {
+    font-size: 15px;
+    color: #d76464;
+  }
+  .reg_button {
+    border: 2px solid #ffe2e2;
+    background: #fcf3f3;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+  }
+  .reg_button:hover {
+    opacity: 0.8;
+  }
+  .reg_button:active {
+    opacity: 1;
+  }
+}

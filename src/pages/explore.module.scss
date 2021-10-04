@@ -1,0 +1,117 @@
+.exp_srch_pt {
+  text-align: center;
+  padding: 13px 0;
+  //   FAKE SEARCH BOX
+  .fake_searchbox {
+    border: 2px solid black;
+    text-align: left;
+    .explore_input {
+      border: 2px solid rgba(245, 0, 0, 0);
+      // width: 275px;
+      width: 240px;
+      font-size: 20px;
+      line-height: 10px;
+      padding: 5px;
+      position: relative;
+    }
+    .explore_input:focus {
+      outline: none !important;
+    }
+  }
+}
+//when screen size is less than 800px
+@media screen and (max-width: 1430px) {
+  .exp_srch_pt {
+    .fake_searchbox {
+      .explore_input {
+        width: 230px;
+      }
+    }
+  }
+}
+
+.home_gp {
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s all;
+  .home_gp_name {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  .home_gp_username {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+}
+.home_gp:hover {
+  background-color: #fcf3f3;
+}
+.home_gp:active {
+  background-color: #f3e2e2;
+}
+.search_visible {
+  position: absolute;
+  width: 302px;
+  box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px,
+    rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+  left: 3px;
+  padding: 10px 0;
+  background-color: white;
+  margin-top: 2px;
+  text-align: center;
+}
+.search_invisible {
+  display: none;
+}
+
+@media screen and (max-width: 1330px) {
+  .exp_srch_pt {
+    .fake_searchbox {
+      .explore_input {
+        width: 220px;
+      }
+    }
+  }
+  .search_visible {
+    width: 298px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .exp_srch_pt {
+    .fake_searchbox {
+      .explore_input {
+        width: 200px;
+      }
+    }
+  }
+  .search_visible {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .exp_srch_pt {
+    .fake_searchbox {
+      .explore_input {
+        width: 180px;
+      }
+    }
+  }
+  .search_visible {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .exp_srch_pt {
+    .fake_searchbox {
+      .explore_input {
+        width: 150px;
+      }
+    }
+  }
+  .search_visible {
+    width: 230px;
+  }
+}

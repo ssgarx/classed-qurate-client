@@ -1,0 +1,76 @@
+.cg {
+  padding: 20px;
+  .cg_label {
+    font-weight: 500;
+    margin: 7px 0;
+    display: inline-block;
+  }
+  .cg_input {
+    border: 1px solid black;
+    width: 275px;
+    font-size: 20px;
+    line-height: 10px;
+    padding: 5px;
+  }
+  .cg_button {
+    border: 2px solid #ffe2e2;
+    background: #fcf3f3;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    span {
+      background: transparent;
+      & i {
+        background: transparent;
+        position: relative;
+        top: 1px;
+        -webkit-animation: spin 1s linear infinite; /* Safari */
+        animation: spin 1s linear infinite;
+      }
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  .cg_button:hover {
+    opacity: 0.8;
+  }
+  .cg_button:active {
+    opacity: 1;
+  }
+  .close_button {
+    border: 2px solid #000000;
+    background: #fcf3f3;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+  }
+  .close_button:hover {
+    opacity: 0.8;
+  }
+  .close_button:active {
+    opacity: 1;
+  }
+}
+
+.error_msgs {
+  font-size: 15px;
+  color: #d76464;
+}

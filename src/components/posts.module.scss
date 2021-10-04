@@ -1,0 +1,66 @@
+.fence {
+  border: 2px solid black;
+  width: 500px;
+  // max-width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  //when screen is less than 800px
+  @media (max-width: 1150px) {
+    width: 450px;
+  }
+  @media (max-width: 1050px) {
+    width: 400px;
+  }
+  @media (max-width: 700px) {
+    width: 350px;
+  }
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+
+  a:link {
+    text-decoration: none !important;
+  }
+  .image {
+    //target image
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .desc {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase !important;
+    color: black;
+    word-wrap: break-word;
+  }
+  .domain {
+    padding: 0px 10px 10px 10px;
+    color: black;
+    margin: 0;
+  }
+  .postMenuSpan {
+    float: right;
+    // margin-bottom: 40px;
+    .menu_icon {
+      cursor: pointer;
+      transform: rotate(90deg);
+      border: none;
+      background-color: transparent;
+      border-radius: 53px;
+      height: 25px;
+      width: 25px;
+      transition: 0.3s ease all;
+    }
+    .menu_icon:hover {
+      background-color: #fcf3f3;
+    }
+    .menu_icon:active {
+      background-color: #f3e2e2;
+    }
+  }
+}
