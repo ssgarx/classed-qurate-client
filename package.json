@@ -108,7 +108,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://mysterious-anchorage-33929.herokuapp.com/",
+  "proxy": "https://immense-caverns-58829.herokuapp.com/",
   "jest": {
     "roots": [
       "<rootDir>/src"
