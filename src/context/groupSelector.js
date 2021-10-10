@@ -39,6 +39,7 @@ function GroupSelectorProvider(props) {
     const groupData = { groupId, groupOwnerId };
     //save the groupData to the local storage
     localStorage.setItem("groupClickedData", JSON.stringify(groupData));
+
     dispatch({
       type: "SELECT_GROUP",
       payload: { groupId, groupOwnerId },
