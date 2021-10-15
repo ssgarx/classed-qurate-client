@@ -5,6 +5,7 @@ import { AuthContext } from "../context/auth";
 import { GroupSelectorContext } from "../context/groupSelector";
 import { GroupUpdaterContext } from "../context/groupsUpdater";
 import style from "./groupInfoMenu.module.scss";
+import { useHistory } from "react-router";
 
 function GroupInfoMenu({ fullScreen, handleClose, groupData }) {
   const { id, groupName, groupUserName, isPrivate, groupFollowers } = groupData;
@@ -15,6 +16,7 @@ function GroupInfoMenu({ fullScreen, handleClose, groupData }) {
   const [errors, setErrors] = useState({});
   const { createGroupSelection } = useContext(GroupSelectorContext);
   const { updateNumberOfGroups } = useContext(GroupUpdaterContext);
+  const history = useHistory();
 
   useEffect(() => {
     setGpName(groupName);
@@ -45,6 +47,7 @@ function GroupInfoMenu({ fullScreen, handleClose, groupData }) {
         createGroupSelection(null, null);
         updateNumberOfGroups("REMOVE");
         handleClose();
+        history.push("/");
       }
     },
     onError(err) {

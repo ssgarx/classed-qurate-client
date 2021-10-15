@@ -155,7 +155,7 @@ function GroupsMobile(args = {}) {
       </div>
 
       <div className={style.hm_create_div}>
-        <Tooltip title="Create new group" placement="right">
+        <Tooltip title="Create new folder" placement="right">
           <button
             className={style.hm_create_btn}
             onClick={() => {

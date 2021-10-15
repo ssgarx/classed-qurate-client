@@ -44,11 +44,11 @@ function CreateGroup(props) {
     >
       <div className={style.cg}>
         <form noValidate>
-          <span className={style.cg_label}>group name</span>
+          <span className={style.cg_label}>folder name</span>
           <br />
           <input
             className={style.cg_input}
-            placeholder="Groupname.."
+            placeholder="Foldername.."
             name="groupname"
             type="text"
             value={groupName}
@@ -56,11 +56,11 @@ function CreateGroup(props) {
             onChange={(event) => setGroupName(event.target.value)}
           />
           <br />
-          <span className={style.cg_label}>your group name</span>
+          <span className={style.cg_label}>folder username</span>
           <br />
           <input
             className={style.cg_input}
-            placeholder="Groupusername.."
+            placeholder="Folderusername.."
             name="groupusername"
             type="groupusername"
             value={groupUserName}
@@ -68,7 +68,7 @@ function CreateGroup(props) {
             onChange={(event) => setGroupUserName(event.target.value)}
           />
           <br />
-          <span className={style.cg_label}>Group Privacy </span>
+          <span className={style.cg_label}>Folder Privacy </span>
           <br />
           <FormControlLabel
             control={
@@ -95,7 +95,7 @@ function CreateGroup(props) {
             type="submit"
           >
             {!loading ? (
-              "Create group"
+              "Create folder"
             ) : (
               <span>
                 creating <i className="fas fa-circle-notch"></i>
