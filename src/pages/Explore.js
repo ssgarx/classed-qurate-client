@@ -88,7 +88,7 @@ function Explore() {
             <input
               className={style.explore_input}
               type="text"
-              placeholder="Type group username here"
+              placeholder="Type folder username here"
               value={searchedText}
               onChange={(e) => handleSearch(e)}
             />
